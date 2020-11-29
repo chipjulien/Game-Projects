@@ -1,14 +1,14 @@
-
+#these is a game of snake played on commandline
 import random
 import curses
-
+#importing useful libaraies 
 s = curses.initscr()
 curses.curs_set(0)
 sh, sw = s.getmaxyx()
 w = curses.newwin(sh, sw, 0, 0)
 w.keypad(1)
 w.timeout(100)
-
+#setting up initial varibles
 snk_x = sw/4
 snk_y = sh/2
 snake = [
